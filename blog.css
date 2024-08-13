@@ -1,0 +1,454 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+}
+:root{
+    --bg-background: rgb(30, 30, 231);
+    --color:white;
+    --primary:rgb(230, 152, 8);
+    --secondary:lightblue;
+    --footer:black;
+    --grey:grey;
+    --red:rgb(211, 19, 19);
+    
+}
+/* header-section */
+header{
+    background-color: var(--bg-background);
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--color);
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+.nav-right{
+    display: flex;
+}
+.nav-right nav{
+    margin-left: 5vw;
+}
+.nav-right nav a{
+    color: var(--color);
+}
+.nav-right nav{
+    font-size: 20px;
+}
+.nav-left nav{
+    font-size: 24px;
+    font-weight: 400;
+}
+header .nav-right nav a:hover{
+    color: var(--primary);
+}
+.contact{
+    border: 2px solid var(--primary);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+i{
+    margin-right: 1vw;
+}
+/* Home */
+main{
+   /* margin-left: 5vw; */
+   margin-bottom: 10vh;
+}
+.home{
+    width: 95vw;
+    margin-bottom: 20vh;
+}
+.home h1{
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 10vh;
+}
+.right-img img{
+    width: 50vw;
+    border-radius: 10px;
+}
+.align{
+    display: flex;
+    column-gap: 1vh;
+}
+.side{
+    display: flex;
+}
+.side img{
+width: 20vw;
+}
+.left-img img{
+    width: 15vw;
+    border-radius: 10px;
+}
+.side{
+    margin-bottom: 10px;
+    width: 45vw;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+.right-img{
+    position: relative;
+    opacity: 0.75;
+  
+}
+
+.right-img h4{
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--bg-background);
+}
+.right-img a{
+    top: 23vh;
+    position: absolute;
+    left: 8vw;
+    color: var(--color);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.right-img a:hover{
+    color: var(--primary);
+}
+.side nav{
+    color: var(--red);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-left: 2.2rem;
+}
+.side p{
+    font-size: 1.2rem;
+   margin-left: -4rem;
+   padding-top: 10px;
+   text-indent: 1.5rem;
+}
+.side .life{
+    color: greenyellow;
+}
+.side .code{
+    color: var(--secondary);
+}
+.left-img .side:hover{
+    box-shadow: 10px 10px 10px 10px lightblue;
+    border: none;
+}
+.side p:hover{
+    color: var(--primary);
+}
+/* middle content */
+.email-img img{
+    width: 50vw;
+   border-radius: 30%;
+}
+section{
+   display: flex; 
+   justify-content: space-around;
+}
+section p{
+    letter-spacing: 0.4rem;
+    font-size: 1.7rem;
+    color: var(--grey);
+    word-spacing: 0.2rem;
+
+}
+section h3{
+    font-size: 1.9rem;
+    word-spacing: 0.1rem;
+    line-height: 2.9rem;
+
+}
+input{
+    width: 30vw;
+    height: 10vh;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--secondary);
+    
+}
+i{
+    color: var(--primary);
+}
+span{
+    color: var(--primary);
+}
+ ::placeholder{
+    font-size: 1.2rem;
+}
+input[placeholder="Please enter your Email"]{
+    padding-left: 5vw;
+}
+small{
+    font-size: 0.95rem;
+    color: var(--grey);
+    line-height: 4vw;
+}
+.personal-info l input{
+    width: 1.5vw;
+    height: 3vh;
+    padding-top: 1vh;
+}
+.personal-info span{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.personal-info button{
+    width: 30vw;
+    height: 10vh;
+    margin-top: 5vh;
+    font-size: 1.3rem;
+    background-color: var(--primary);
+    border-radius: 20px;
+    color: var(--color);
+    font-weight: 700;
+
+}
+/* footer */
+footer{
+    background-color: var(--footer);
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+footer h4{
+    font-size: 2.2rem;
+    word-spacing: 0.5rem;
+    color: var(--color);
+    padding-top:3vh;
+}
+footer h6{
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    position: relative;
+    color: var(--grey);
+}
+footer p{
+    font-size: 0.50;
+    word-spacing: 0.45rem;
+    line-height: 1.5rem;
+    color: var(--grey);
+}
+footer h6::after{
+    content: '';
+    width: 5vw;
+    height: 0.75vh;
+    background-color: var(--color);
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+#check{
+    display: none;
+}
+label{
+    display: none;
+}
+.bottom{
+    padding: 10vh 0px;
+    color: var(--grey);
+}
+.nav{
+    display: flex;
+    gap:5vw;
+ cursor: pointer;
+}
+.icons i{
+    font-size: 1.6rem;
+    transition: all 1s ease-in-out;
+}
+.copy{
+    word-spacing: 0.3rem;
+    text-align-last: center;
+}
+.icons i:hover{
+    transform: scale(1.5,1.5);
+    color: var(--primary);
+}
+.nav li:hover{
+    color: var(--primary);
+}
+@media screen and (min-width:700px) and (max-width:1022px){
+
+    /* first section */
+    .right-img h4{
+        position: absolute;
+        top: 3vh;
+        left: 8vw;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: var(--bg-background);
+    }
+    .right-img a{
+        top: 15vh;
+        position: absolute;
+        left: 8vw;
+        color: var(--color);
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .side nav{
+        color: var(--red);
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin-left: 2.2rem;
+    }
+    .side p{
+        font-size: 0.85rem;
+       margin-left: -4rem;
+       padding-top: 10px;
+       text-indent: 1.5rem;
+    }
+    /* second section */  
+}
+@media screen and (min-width:300px) and (max-width:699px){
+    .nav-right nav{
+        font-size: 1.2rem;
+    }
+    label{
+        display: block;
+    }
+    .nav-left nav{
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    .contact{
+        border: 2px solid var(--primary);
+        padding: 0.5rem;
+        border-radius: 1rem;
+    }
+    .nav-right {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--grey);
+        width: 100vw;
+        height: 25vh;
+        z-index: 1;
+        position: fixed;
+        top: -100%;
+        text-align: center;
+        transition: all 1s ease-in-out;
+        background-color: var(--bg-background);
+        
+    }
+    .nav-right nav{
+        padding: 10px;
+    }
+    .nav-left nav {
+        position: relative;
+        left: -30vw;
+        top: 2vh;
+        padding: 4vh;
+    }
+    .nav-left{
+        /* justify-content: space-evenly; */
+        margin-left: 8%;
+        /* margin-top: 15%; */
+ 
+    }
+    .menu1{
+       position: relative;
+       left: 100%;
+       top: -45px; 
+    }
+    .nav-left label i{
+        font-size: 2rem;
+    }
+    #check:checked ~ .nav-right{ 
+        right: 20%;
+        top: 10vh;
+        right: 0px;
+    }   
+    .home h1{
+        font-size: 2rem;
+    } 
+    .align{
+        display: flex;
+        flex-direction: column;
+        width: 98vw;
+        margin-left: 3vw;
+    } 
+.right-img h4{
+    font-size: 1.5rem;
+    top: 2vh;
+}
+.side{
+display: flex;
+flex-direction: column;
+width: 95%;
+}
+.right-img a{
+    font-size: 0.85rem;
+    top: 10vh;
+    width: 20vh;
+}
+
+    .right-img img{
+        width: 95%;
+        
+    }
+    .left-img{
+        margin-top: 5vh;
+        margin-left: 5vw;
+        
+    }
+    .side img{
+        width: 90vw;
+    }
+    .side nav{
+        font-size: 2rem;
+       
+    }
+    .left-img .side p{
+        font-size: 1.2rem;
+       margin-left: 10vw;
+    }
+   .email{
+    display: flex;
+    flex-direction: column;
+   }
+   .email-img img{
+    width: 100vw;
+   }
+   .personal-info{
+    margin-left: 5vw;
+   }
+   .personal-info input{
+    width: 80vw;
+   }
+   .personal-info l input{
+    width: 4vw;
+   }
+   .personal-info button{
+    margin-left: 20vw;
+    width: 40vw;
+    height: 8vh;
+   }
+   footer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vw;
+   }
+   .bottom .nav{
+     padding-top: 5vh;
+     padding-left: 15vw;
+   }
+   .icons {
+    padding-top: 5vh;
+    padding-left: 20vw;
+   }
+   .icons i{
+    padding-left: 2vw;
+   }
+   
+}
