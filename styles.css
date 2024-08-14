@@ -30,6 +30,9 @@ header{
     top: -10px;
     z-index:22;
 }
+label i{
+    display: none;
+}
 .nav-right{
     display: flex;
 }
@@ -168,7 +171,7 @@ footer p{
 footer h6::after{
     content: '';
     width: 5vw;
-    height: 0.75vh;
+    height: 0.50vh;
     background-color: var(--color);
     position: absolute;
     top: 30px;
@@ -266,6 +269,9 @@ footer h6::after{
         width: 100vw;
         background-color: var(--bg-background);
         transition: all 0.85s ease-in-out;
+    }
+    label i{
+        display: block;
     }
     .nav-right nav{
         padding: 2vh;

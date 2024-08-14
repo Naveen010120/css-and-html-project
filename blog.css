@@ -199,13 +199,16 @@ small{
     height: 3vh;
     padding-top: 1vh;
 }
+.personal-info input{
+    height: 6vh;
+}
 .personal-info span{
     font-size: 1.2rem;
     font-weight: 400;
 }
 .personal-info button{
-    width: 30vw;
-    height: 10vh;
+    width: 15vw;
+    height: 5vh;
     margin-top: 5vh;
     font-size: 1.3rem;
     background-color: var(--primary);
@@ -310,6 +313,18 @@ label{
        text-indent: 1.5rem;
     }
     /* second section */  
+    .personal-info button{
+        width: 15vw;
+        height: 6vh;
+        box-shadow: 5px 5px 5px 5px grey;
+    }
+    .personal-info  input{
+        height: 5vh;
+        width: 40vw;
+    }
+    .right-img a{
+        top: 10vh;
+    }
 }
 @media screen and (min-width:300px) and (max-width:699px){
     .nav-right nav{
@@ -432,7 +447,7 @@ width: 95%;
    .personal-info button{
     margin-left: 20vw;
     width: 40vw;
-    height: 8vh;
+    height: 5vh;
    }
    footer{
     display: flex;
