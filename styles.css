@@ -30,7 +30,7 @@ header{
     top: -10px;
     z-index:22;
 }
-label i{
+.nav-left label i{
     display: none;
 }
 .nav-right{

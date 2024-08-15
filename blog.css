@@ -208,7 +208,7 @@ small{
 }
 .personal-info button{
     width: 15vw;
-    height: 5vh;
+    height: 10vh;
     margin-top: 5vh;
     font-size: 1.3rem;
     background-color: var(--primary);
